@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0FC34BF-9B19-41DF-8F22-931B2973034D}</ProjectGuid>
+    <ProjectGuid>{54DD936C-A601-415E-ABBF-3E607914344F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeetCode.Tests</RootNamespace>
-    <AssemblyName>LeetCode.Tests</AssemblyName>
+    <RootNamespace>LeetCode.DataStructure.Tests</RootNamespace>
+    <AssemblyName>LeetCode.DataStructure.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TrappingRainWaterTests.cs" />
+    <Compile Include="PriorityQueueTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LeetCode.Problems\LeetCode.Problems.csproj">
-      <Project>{439724c3-474b-4640-b842-f9bbb010f3b4}</Project>
-      <Name>LeetCode.Problems</Name>
+    <ProjectReference Include="..\LeetCode.DataStructure\LeetCode.DataStructure.csproj">
+      <Project>{3c6323b3-cb9d-44b1-8feb-a13270b4f501}</Project>
+      <Name>LeetCode.DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
