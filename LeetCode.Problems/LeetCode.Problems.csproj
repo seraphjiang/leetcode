@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LongestConsecutiveSequence.cs" />
+    <Compile Include="LongestIncreasingPathInMatrix.cs" />
     <Compile Include="TrappingRainWater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
+    <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
