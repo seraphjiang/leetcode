@@ -52,12 +52,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LeetCode.DataStructure\LeetCode.DataStructure.csproj">
+      <Project>{3c6323b3-cb9d-44b1-8feb-a13270b4f501}</Project>
+      <Name>LeetCode.DataStructure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LeetCode.Problems\LeetCode.Problems.csproj">
       <Project>{439724c3-474b-4640-b842-f9bbb010f3b4}</Project>
       <Name>LeetCode.Problems</Name>

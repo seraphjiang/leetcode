@@ -44,8 +44,13 @@
     <Compile Include="IPriorityQueue.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Standalone\BinaryTrees\BinaryTree.cs" />
+    <Compile Include="Standalone\BinaryTrees\BinaryTreeNode.cs" />
+    <Compile Include="Standalone\BinaryTrees\BinaryTreeSerialization.cs" />
+    <Compile Include="Standalone\BinaryTrees\TreeLinkNode.cs" />
     <Compile Include="Standalone\PriorityQueue.cs" />
     <Compile Include="Standalone\V2\PriorityQueue.cs" />
+    <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
