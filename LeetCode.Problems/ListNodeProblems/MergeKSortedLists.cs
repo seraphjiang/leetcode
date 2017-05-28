@@ -8,6 +8,34 @@ namespace LeetCode.Problems.ListNodeProblems
 {
     public class MergeKSortedLists
     {
+        /// <summary>
+        /// O(n*lg(k))
+        /// </summary>
+        /// <param name="lists"></param>
+        /// <returns></returns>
+        public ListNode MergeKLists2(ListNode[] lists)
+        {
+            var pq = new PriorityQueue<ListNode>(32, Comparer<ListNode>.Create((a,b)=> a.val - b.val));
+            var dummy = new ListNode(0);
+            var tail = dummy;
+
+            foreach(var n in lists)
+            {
+                if(n!=null)
+                    pq.Push(n);
+            }
+
+            while (pq.Count > 0)
+            {
+                tail.next = pq.Pop();
+                tail = tail.next;
+                if (tail.next != null)
+                    pq.Push(tail.next);
+            }
+
+            return dummy.next;
+        }
+
         public ListNode MergeKLists(ListNode[] lists)
         {
             if (lists == null || lists.Length == 0) return null;

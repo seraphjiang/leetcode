@@ -1,4 +1,4 @@
-﻿using LeetCode.DataStructure.Standalone.V2;
+﻿using LeetCode.DataStructure.LeetCodeDataStructures;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

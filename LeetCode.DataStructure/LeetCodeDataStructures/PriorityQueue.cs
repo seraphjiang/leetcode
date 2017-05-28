@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode.DataStructure.Standalone.V2
+namespace LeetCode.DataStructure.LeetCodeDataStructures
 {
     /// <summary>
     /// Mini Heap as default comparasion direction (a,b)=>a-b;
