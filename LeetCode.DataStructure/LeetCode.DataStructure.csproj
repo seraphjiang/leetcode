@@ -43,6 +43,7 @@
     <Compile Include="BinaryHeap.cs" />
     <Compile Include="IPriorityQueue.cs" />
     <Compile Include="LeetCodeDataStructures\ListNode.cs" />
+    <Compile Include="LeetCodeDataStructures\Point.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Standalone\BinaryTrees\BinaryTree.cs" />

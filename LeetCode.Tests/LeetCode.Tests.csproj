@@ -56,6 +56,7 @@
     <Compile Include="ContestTests\UnitTest1.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
+    <Compile Include="MathProblemsTests\MaxPointsOnALineTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
