@@ -30,5 +30,14 @@ namespace LeetCode.Tests.MathProblemsTests
             var actual = (new MaxPointsOnALine().MaxPoints(list.ToArray()));
             Assert.AreEqual(24, actual);
         }
+
+        [TestMethod]
+        public void Test_MaxPoints3()
+        {
+            //  [[0,0],[94911151,94911150],[94911152,94911151]]
+            var input = new Point[] { new Point(0, 0), new Point(94911151, 94911150), new Point(94911152, 94911151) };
+            var actual = (new MaxPointsOnALine().MaxPoints(input));
+            Assert.AreEqual(2, actual);
+        }
     }
 }
