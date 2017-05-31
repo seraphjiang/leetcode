@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="ContestTests\UnitTest1.cs" />
+    <Compile Include="DesignProblemsTests\LRUCacheTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
     <Compile Include="MathProblemsTests\MaxPointsOnALineTests.cs" />
