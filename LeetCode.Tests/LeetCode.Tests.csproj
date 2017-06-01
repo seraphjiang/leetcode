@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ArrayProblemsTests\FindFirstMissingPositiveTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
     <Compile Include="ContestTests\UnitTest1.cs" />
