@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
     <Compile Include="BinaryTreeProblems\SerializeandDeserializeBinaryTree.cs" />
     <Compile Include="Contests\Week34\RangeAddition.cs" />
     <Compile Include="Contests\Week34\MinimumIndexSumofTwoLists.cs" />
@@ -47,6 +48,7 @@
     <Compile Include="Contests\Week34\NonnegativeIntegersWithoutConsecutiveOnes.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
+    <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
     <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestIncreasingPathInMatrix.cs" />
