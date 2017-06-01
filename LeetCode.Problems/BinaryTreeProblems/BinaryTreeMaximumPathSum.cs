@@ -16,7 +16,7 @@ namespace LeetCode.Problems.BinaryTreeProblems
             return max;
         }
 
-        public int Dfs(TreeNode root)
+        public int DfsNotGood(TreeNode root)
         {
             if (root == null)
             {
@@ -40,5 +40,16 @@ namespace LeetCode.Problems.BinaryTreeProblems
 
             return Math.Max(root.val, m + root.val);// must include root.
         }
+
+        public int Dfs(TreeNode root)
+        {
+            if (root == null) return 0;
+
+            var left = Math.Max(0, Dfs(root.left)); // possible left should always large than 0
+            var right = Math.Max(0, Dfs(root.right)); // if child is negative , just ignore by return to 0
+            max = Math.Max(max, left + right + root.val);
+            return Math.Max(left, right) + root.val;
+        }
+
     }
 }
