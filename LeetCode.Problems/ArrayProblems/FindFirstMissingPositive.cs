@@ -40,7 +40,6 @@ namespace LeetCode.Problems.ArrayProblems
                     nums[nums[i] - 1] = nums[i];
                     nums[i] = temp;
 
-                    Console.WriteLine("{0},{1}", nums[i], nums[nums[i] - 1]);
                 }
             }
 
