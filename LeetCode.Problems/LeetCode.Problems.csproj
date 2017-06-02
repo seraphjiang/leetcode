@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayProblems\FindFirstMissingPositive.cs" />
+    <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
     <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
     <Compile Include="BinaryTreeProblems\SerializeandDeserializeBinaryTree.cs" />
     <Compile Include="Contests\Week34\RangeAddition.cs" />
