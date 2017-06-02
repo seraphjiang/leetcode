@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Problems.SlidingWindow
 {
+    /// <summary>
+    /// 239. Sliding Window Maximum
+    /// https://leetcode.com/problems/sliding-window-maximum/#/description
+    /// </summary>
     public class SlidingWindowMaximum
     {
         public int[] MaxSlidingWindow(int[] nums, int k)
@@ -16,11 +20,15 @@ namespace LeetCode.Problems.SlidingWindow
             var deque = new LinkedList<int>();
             for (var i = 0; i < nums.Length; ++i)
             {
-                while (deque.Any() && deque.First() < i - k + 1)
+                // remove from head, for those don't belong to k window size element
+                // the size of window don't has to be exactly k. as long as the first index is valid 
+                while (deque.Any() && deque.First() < i - k + 1) // to maintain a k window, i - x +1 = k, x = i-k+1, for all less than x, we need to remove it.
                 {
                     deque.RemoveFirst();
                 }
 
+                // for those element small than nums[i] but distance to it is less than k.(which means still in queue)
+                // just remove it, because for any case, nums[i] is always better candidate.
                 while(deque.Any() && nums[deque.Last()] < nums[i])
                 {
                     deque.RemoveLast();
@@ -28,7 +36,7 @@ namespace LeetCode.Problems.SlidingWindow
 
                 deque.AddLast(i);
 
-                if (i >= k - 1)
+                if (i >= k - 1) // when i = k-1, window size = i - 0 +1 = k-1+1 = k. now we could push valid answer to result
                 {
                     res[i - k + 1] = nums[deque.First()]; 
                 }
