@@ -50,11 +50,13 @@
     <Compile Include="Contests\Week34\NonnegativeIntegersWithoutConsecutiveOnes.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
+    <Compile Include="DynamicProgrammingProblems\WordBreakII.cs" />
     <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
     <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestIncreasingPathInMatrix.cs" />
     <Compile Include="MathProblems\MaxPointsOnALine.cs" />
+    <Compile Include="SlidingWindow\MinimumWindowSubstring.cs" />
     <Compile Include="SlidingWindow\SlidingWindowMaximum.cs" />
     <Compile Include="StackProblems\LargestRectangleinHistogram.cs" />
     <Compile Include="TrappingRainWater.cs" />
