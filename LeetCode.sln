@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.DataStructure", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.DataStructure.Tests", "LeetCode.DataStructure.Tests\LeetCode.DataStructure.Tests.csproj", "{54DD936C-A601-415E-ABBF-3E607914344F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons", "Commons\Commons.csproj", "{3160871C-C85C-4CFC-A67A-FE73035C234C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{54DD936C-A601-415E-ABBF-3E607914344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DD936C-A601-415E-ABBF-3E607914344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DD936C-A601-415E-ABBF-3E607914344F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

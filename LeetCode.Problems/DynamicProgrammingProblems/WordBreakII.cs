@@ -27,7 +27,6 @@ namespace LeetCode.Problems.DynamicProgrammingProblems
             if(dict.Contains(s.Substring(start))) {
                 res.Add(s.Substring(start));
             }
-            //if (cache.ContainsKey(start)) return cache[start];
             for (var i = start+1; i < s.Length; ++i)
             {
                 var left = s.Substring(start, i - start);
