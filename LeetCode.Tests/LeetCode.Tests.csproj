@@ -59,6 +59,7 @@
     <Compile Include="ContestTests\UnitTest1.cs" />
     <Compile Include="DesignProblemsTests\LRUCacheTests.cs" />
     <Compile Include="DesignProblemsTests\LFUCacheTests.cs" />
+    <Compile Include="DPProblemsTests\RegularExpressionMatchingTests.cs" />
     <Compile Include="DPProblemsTests\WordBreakIITests.cs" />
     <Compile Include="GreedyProblemsTests\WildcardMatchTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
