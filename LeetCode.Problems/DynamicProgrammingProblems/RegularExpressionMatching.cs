@@ -15,8 +15,51 @@ namespace LeetCode.Problems.DynamicProgrammingProblems
         public bool IsMatchBackTracking(string s, string p)
         {
             return Dfs(s, p, 0, 0);
+            //return Dfs1(s, p, 0, 0);
         }
+        public bool Dfs(string s, string p, int l, int r)
+        {
+            if (l < s.Length && r < p.Length)
+            {
+                if (s[l] == p[r] || p[r] == '.')
+                {
+                    if (r + 1 < p.Length && p[r + 1] == '*')
+                    {
+                        while (l < s.Length && (s[l] == p[r] || p[r] == '.'))
+                        {
+                            if (Dfs(s, p, l, r + 2)) return true;
+                            l++;
+                        }
+                        return Dfs(s, p, l, r + 2);
+                    }
+                    return Dfs(s, p, l + 1, r + 1);
+                }
+                else if (p[r] == '*') // all aa, a* has been handled by previous check
+                {
+                    return Dfs(s, p, l, r + 1);
+                }
+                else if (r + 1 < p.Length && p[r + 1] == '*')
+                {
+                    return Dfs(s, p, l, r + 2);
+                }
+            }
 
+            // remove rest of  x* or .* or *
+            while (r < p.Length)
+            {
+                if (p[r] == '*') { r++; }
+                else if (r + 1 < p.Length && p[r + 1] == '*')
+                {
+                    r += 2;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            return l == s.Length && r == p.Length;
+        }
         /// <summary>
         /// even it is an AC solution, there lots of redundant check code.
         /// </summary>
@@ -25,7 +68,7 @@ namespace LeetCode.Problems.DynamicProgrammingProblems
         /// <param name="l"></param>
         /// <param name="r"></param>
         /// <returns></returns>
-        public bool Dfs(string s, string p, int l, int r)
+        public bool Dfs1(string s, string p, int l, int r)
         {
             if (l < s.Length && r < p.Length)
             {
