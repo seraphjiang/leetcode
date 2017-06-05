@@ -48,9 +48,9 @@
     <Compile Include="Contests\Week34\MinimumIndexSumofTwoLists.cs" />
     <Compile Include="Contests\Week34\ArrayNestingIndexJump.cs" />
     <Compile Include="Contests\Week34\NonnegativeIntegersWithoutConsecutiveOnes.cs" />
-    <Compile Include="Contests\Week35\Class1.cs" />
-    <Compile Include="Contests\Week35\Class2.cs" />
-    <Compile Include="Contests\Week35\Class3.cs" />
+    <Compile Include="Contests\Week35\CanPlaceFlowersProblem.cs" />
+    <Compile Include="Contests\Week35\ConstructStringfromBinaryTree.cs" />
+    <Compile Include="Contests\Week35\FindDuplicateFileinSystem.cs" />
     <Compile Include="Contests\Week35\TagValidator.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />

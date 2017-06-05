@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Problems.Contests.Week35
 {
-    public class CanPlaceFlowers
+    public class CanPlaceFlowersProblem
     {
         public bool CanPlaceFlowers(int[] flowerbed, int n)
         {

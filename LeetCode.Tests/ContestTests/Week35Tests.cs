@@ -10,17 +10,17 @@ namespace LeetCode.Tests.ContestTests
         [TestMethod]
         public void Test_Contest_Week35_Problem1()
         {
-            var o = new Class1();
+            var o = new CanPlaceFlowersProblem();
         }
         [TestMethod]
         public void Test_Contest_Week35_Problem2()
         {
-            var o = new Class2();
+            var o = new ConstructStringfromBinaryTree();
         }
         [TestMethod]
         public void Test_Contest_Week35_Problem3()
         {
-            var o = new Class3();
+            var o = new FindDuplicateFileinSystem();
         }
         [TestMethod]
         public void Test_Contest_Week35_Problem4()
