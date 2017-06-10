@@ -40,7 +40,7 @@ namespace HackerRank.Problems
                 for (var j = 0; j < m; j++)
                 {
                     if (visitied[i, j] || islands[i][j] == '0') continue;
-                    max = Math.Max(max, bfs(i,j));
+                    max = Math.Max(max, bfs(i, j));
                 }
             }
 
@@ -55,26 +55,43 @@ namespace HackerRank.Problems
             var directions = new int[,]{
                 {1,0}, {-1,0},{0,1},{0,-1},{1,1},{-1,-1},{1,-1},{-1,1}
             };
-            var count = 0;
-            var q = new Queue<Tuple<int, int>>();
-            q.Enqueue(Tuple.Create(x, y));
-            while (q.Count > 0)
+            var count = 1;
+            var q = new Queue<Tuple<int, int>>();//
+            var filename = Path.GetRandomFileName();
+            //q.Enqueue(Tuple.Create(x, y));
+            using (var write = File.AppendText(filename))
             {
-                var node = q.Dequeue();
+                write.WriteLine(string.Format("{0},{1}", x, y));
+                write.Close();
+            }
+            var qCount = 1;
+            while (qCount > 0)
+            {
+                var li = File.ReadAllLines(filename);
+                var node = li[0].Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                var newLines = li.Skip(1).Take(li.Length - 1).ToArray();
+                File.WriteAllLines(filename, newLines);
                 count++;
-                var x0 = node.Item1;
-                var y0 = node.Item2;
+                qCount = li.Length - 1;
+                var x0 = int.Parse(node[0]);
+                var y0 = int.Parse(node[1]);
+                //visitied[x0, y0] = true;
                 for (var i = 0; i < 8; i++)
                 {
                     var r = x0 + directions[i, 0];
                     var c = y0 + directions[i, 1];
-
                     if (r < 0 || r >= n || c < 0 || c >= m || visitied[r, c] || islands[r][c] == '0') continue;
-
-                    q.Enqueue(Tuple.Create(r, c));
+                    //write.WriteLine(string.Format("{0},{1}", r, c));
+                    //q.Enqueue(Tuple.Create(r, c));
+                    visitied[r, c] = true;
+                    using (var liwr = File.AppendText(filename))
+                    {
+                        liwr.WriteLine(string.Format("{0},{1}", r, c));
+                        liwr.Close();
+                        qCount++;
+                    }
                 }
             }
-
 
             return count;
         }
