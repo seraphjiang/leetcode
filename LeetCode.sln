@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.DataStructure.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commons", "Commons\Commons.csproj", "{3160871C-C85C-4CFC-A67A-FE73035C234C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank.Problems", "HackerRank.Problems\HackerRank.Problems.csproj", "{9E3B2DED-023B-4D55-BD24-6AF91A11FF1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3160871C-C85C-4CFC-A67A-FE73035C234C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3B2DED-023B-4D55-BD24-6AF91A11FF1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3B2DED-023B-4D55-BD24-6AF91A11FF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3B2DED-023B-4D55-BD24-6AF91A11FF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3B2DED-023B-4D55-BD24-6AF91A11FF1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
