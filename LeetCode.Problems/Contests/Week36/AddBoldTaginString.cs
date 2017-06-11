@@ -17,7 +17,7 @@ namespace LeetCode.Problems.Contests.Week36
                 var len = 0;
                 foreach (var d in dicts)
                 {
-                    if (i + d.Length < s.Length && s.Substring(i, d.Length).Equals(d))
+                    if (i + d.Length <= s.Length && s.Substring(i, d.Length).Equals(d))
                     {
                         len = Math.Max(len, d.Length);
                     }
@@ -42,7 +42,7 @@ namespace LeetCode.Problems.Contests.Week36
                 sb.Append("<b>");
                 while (j < s.Length && dp[j])
                 {
-                    sb.Append(s[i]);
+                    sb.Append(s[j]);
                     j++;
                 }
 

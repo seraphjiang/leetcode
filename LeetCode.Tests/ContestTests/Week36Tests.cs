@@ -47,7 +47,7 @@ namespace LeetCode.Tests.ContestTests
         [TestMethod]
         public void Test_AddBoldTaginString1()
         {
-            var o = new AddBoldTaginString();
+            var o = new AddBoldTaginStringTLE();
             var output = o.AddBoldTag("abcxyz123", new string[] { "abc", "123" });
 
             Assert.AreEqual("<b>abc</b>xyz<b>123</b>", output);
@@ -56,7 +56,7 @@ namespace LeetCode.Tests.ContestTests
         [TestMethod]
         public void Test_AddBoldTaginString2()
         {
-            var o = new AddBoldTaginString();
+            var o = new AddBoldTaginStringTLE();
             var output = o.AddBoldTag("aaabbcc", new string[] { "aaa", "aab", "bc", "aaabbcc" });
 
             Assert.AreEqual("<b>aaabbcc</b>", output);
