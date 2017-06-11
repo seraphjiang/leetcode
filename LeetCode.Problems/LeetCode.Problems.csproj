@@ -52,6 +52,10 @@
     <Compile Include="Contests\Week35\ConstructStringfromBinaryTree.cs" />
     <Compile Include="Contests\Week35\FindDuplicateFileinSystem.cs" />
     <Compile Include="Contests\Week35\TagValidator.cs" />
+    <Compile Include="Contests\Week36\ValidTriangleNumber.cs" />
+    <Compile Include="Contests\Week36\StringIterator.cs" />
+    <Compile Include="Contests\Week36\MergeTwoBinaryTrees.cs" />
+    <Compile Include="Contests\Week36\AddBoldTaginString.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
     <Compile Include="DynamicProgrammingProblems\RegularExpressionMatching.cs" />
