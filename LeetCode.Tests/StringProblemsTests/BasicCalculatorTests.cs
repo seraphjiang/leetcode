@@ -37,5 +37,17 @@ namespace LeetCode.Tests.StringProblemsTests
             var o = new BasicCalculator();
             Assert.AreEqual(3, o.Calculate("   (  3 ) "));
         }
+        [TestMethod]
+        public void Test_BasicCalculator6()
+        {
+            var o = new BasicCalculator();
+            Assert.AreEqual(2147483647, o.Calculate("2147483647"));
+        }
+        [TestMethod]
+        public void Test_BasicCalculator7()
+        {
+            var o = new BasicCalculator();
+            Assert.AreEqual(1, o.Calculate("1"));
+        }
     }
 }

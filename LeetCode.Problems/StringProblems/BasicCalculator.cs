@@ -10,6 +10,49 @@ namespace LeetCode.Problems.StringProblems
     {
         public int Calculate(string s)
         {
+            var res = 0;
+            var stack = new Stack<int>();
+            var sign = 1;
+
+            for (var i = 0; i < s.Length; ++i)
+            {
+                if (char.IsDigit(s[i]))
+                {
+                    var num = (int)(s[i] - '0');
+
+                    while (i + 1 < s.Length && char.IsDigit(s[i + 1]))
+                    {
+                        num = num * 10 + (int)(s[i + 1] - '0');
+                        i++;
+                    }
+                    res += sign * num;
+                }
+                else if (s[i] == '+')
+                {
+                    sign = 1;
+                }
+                else if (s[i] == '-')
+                {
+                    sign = -1;
+                }
+                else if (s[i] == '(')
+                {
+                    stack.Push(sign);
+                    stack.Push(res);
+                    res = 0;
+                    sign = 1;
+                }
+                else if (s[i] == ')')
+                {
+                    res = stack.Pop() + stack.Pop() * res;
+                }
+            }
+
+            return res;
+        }
+
+        public int Calculate2(string s)
+        {
             if (string.IsNullOrEmpty(s)) return 0;
             var i = 0;
 
@@ -39,7 +82,8 @@ namespace LeetCode.Problems.StringProblems
                     {
                         ret.Pop();//remove (
 
-                        if (ret.Count == 0) {
+                        if (ret.Count == 0)
+                        {
                             ret.Push(num1);
                         }
                         else
@@ -69,7 +113,7 @@ namespace LeetCode.Problems.StringProblems
                     {
                         if (ret.Peek() == "+" || ret.Peek() == "-")
                         {
-                            var pre = ret.Pop(); 
+                            var pre = ret.Pop();
 
                             var num2 = ret.Pop();
                             if (pre == "+")
