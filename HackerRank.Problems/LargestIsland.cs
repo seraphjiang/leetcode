@@ -47,6 +47,55 @@ namespace HackerRank.Problems
             Console.WriteLine(max);
         }
 
+        //static void Main(String[] args)
+        //{
+        //    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+        //    var line1 = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        //    var n = int.Parse(line1[0]);
+        //    var m = int.Parse(line1[1]);
+
+        //    var islands = new string[n];
+        //    var visitied = new bool[n, m];
+        //    for (var i = 0; i < n; i++)
+        //    {
+        //        var lines = Console.ReadLine();
+        //        islands[i] = lines;
+        //    }
+        //    var max = 0;
+        //    for (var i = 0; i < n; i++)
+        //    {
+        //        for (var j = 0; j < m; j++)
+        //        {
+        //            if (visitied[i, j] || islands[i][j] == '0') continue;
+        //            max = Math.Max(max, dfs(islands, visitied, i, j, n, m));
+        //        }
+        //    }
+
+        //    Console.WriteLine(max);
+        //}
+
+        static int dfs(string[] islands, bool[,] visitied, int x, int y, int n, int m)
+        {
+            if (visitied[x, y]) return 0;
+
+            visitied[x, y] = true;
+            var directions = new int[,]{
+            {1,0}, {-1,0},{0,1},{0,-1},{1,1},{-1,-1},{1,-1},{-1,1}
+        };
+            var count = 1;
+            for (var i = 0; i < 8; i++)
+            {
+                var r = x + directions[i, 0];
+                var c = y + directions[i, 1];
+
+                if (r < 0 || r >= n || c < 0 || c >= m || visitied[r, c] || islands[r][c] == '0') continue;
+
+                count += dfs(islands, visitied, r, c, n, m);
+            }
+
+            return count;
+        }
+
         static int bfs(int x, int y)
         {
             if (visitied[x, y]) return 0;
