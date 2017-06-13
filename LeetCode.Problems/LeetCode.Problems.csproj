@@ -69,6 +69,7 @@
     <Compile Include="SlidingWindow\MinimumWindowSubstring.cs" />
     <Compile Include="SlidingWindow\SlidingWindowMaximum.cs" />
     <Compile Include="StackProblems\LargestRectangleinHistogram.cs" />
+    <Compile Include="StringProblems\BasicCalculator.cs" />
     <Compile Include="StringProblems\BasicCalculatorII.cs" />
     <Compile Include="StringProblems\ShortestPalindrome.cs" />
     <Compile Include="StringProblems\SubstringwithConcatenationofAllWords.cs" />
