@@ -40,9 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amazon\Class1.cs" />
-    <Compile Include="Amazon\Class2.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Amazon\CalculateScore.cs" />
+    <Compile Include="Amazon\FindAllLunchs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interviews.Amazon
 {
-    public class Class2
+    public class FindAllLunchs
     {
         public static string[,] matchLunches(string[,] lunchMenuPairs,
                                                 string[,] teamCuisinePreference)
