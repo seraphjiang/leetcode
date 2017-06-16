@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeeksForGeeks.Problems", "G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interviews", "Interviews\Interviews.csproj", "{DFA488B1-3ABD-4062-926E-8C9E48F50761}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherSites.Problems", "OtherSites.Problems\OtherSites.Problems.csproj", "{0891B50B-A8F7-46BB-806D-94F9D205BC8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{DFA488B1-3ABD-4062-926E-8C9E48F50761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFA488B1-3ABD-4062-926E-8C9E48F50761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFA488B1-3ABD-4062-926E-8C9E48F50761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0891B50B-A8F7-46BB-806D-94F9D205BC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0891B50B-A8F7-46BB-806D-94F9D205BC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0891B50B-A8F7-46BB-806D-94F9D205BC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0891B50B-A8F7-46BB-806D-94F9D205BC8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
