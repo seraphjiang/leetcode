@@ -12,7 +12,7 @@ namespace LeetCode.Problems.GreedyProblems
         {
             var l = 0; var r = 0;
             var lastStart = -1;
-            var lastS = 0;
+            var lastSource = 0;
             while (l < s.Length)
             {
                 if (r < p.Length && (s[l] == p[r] || p[r] == '?'))
@@ -22,11 +22,11 @@ namespace LeetCode.Problems.GreedyProblems
                 else if (r < p.Length && p[r] == '*')
                 {
                     lastStart = r; r++;
-                    lastS = l; continue;
+                    lastSource = l; continue;
                 }
                 else if (lastStart >= 0)
                 {
-                    l = ++lastS;
+                    l = ++lastSource;
                     r = lastStart + 1;  continue;
                 }
 
