@@ -64,6 +64,7 @@
     <Compile Include="GraphProblems\ReconstructItinerary.cs" />
     <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
+    <Compile Include="ListNodeProblems\ReverseNodesinkGroup.cs" />
     <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestIncreasingPathInMatrix.cs" />
     <Compile Include="MathProblems\MaxPointsOnALine.cs" />

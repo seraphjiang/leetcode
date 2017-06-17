@@ -65,6 +65,7 @@
     <Compile Include="DPProblemsTests\WordBreakIITests.cs" />
     <Compile Include="GraphProblemsTests\ReconstructItineraryTest.cs" />
     <Compile Include="GreedyProblemsTests\WildcardMatchTests.cs" />
+    <Compile Include="ListNodeProblemsTests\ReverseNodesinkGroupTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
     <Compile Include="MathProblemsTests\MaxPointsOnALineTests.cs" />
