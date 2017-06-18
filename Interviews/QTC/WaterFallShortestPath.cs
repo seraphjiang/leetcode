@@ -44,7 +44,7 @@ namespace Interviews.QTC
 
                 return Math.Min(left, right);
             }
-            
+
             return dfs(start, slabs, level + 1, total);
         }
     }
