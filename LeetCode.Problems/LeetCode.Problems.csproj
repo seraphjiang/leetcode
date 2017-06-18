@@ -57,6 +57,10 @@
     <Compile Include="Contests\Week36\StringIterator.cs" />
     <Compile Include="Contests\Week36\MergeTwoBinaryTrees.cs" />
     <Compile Include="Contests\Week36\AddBoldTaginStringTLE.cs" />
+    <Compile Include="Contests\Week37\MaximumDistanceinArrays.cs" />
+    <Compile Include="Contests\Week37\Class2.cs" />
+    <Compile Include="Contests\Week37\Class3.cs" />
+    <Compile Include="Contests\Week37\TaskSchedulerProblem.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
     <Compile Include="DynamicProgrammingProblems\RegularExpressionMatching.cs" />
