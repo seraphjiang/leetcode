@@ -43,6 +43,7 @@
     <Compile Include="Amazon\CalculateScore.cs" />
     <Compile Include="Amazon\FindAllLunchs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QTC\WaterFallShortestPath.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
