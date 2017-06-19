@@ -66,6 +66,7 @@
     <Compile Include="DynamicProgrammingProblems\RegularExpressionMatching.cs" />
     <Compile Include="DynamicProgrammingProblems\WordBreakII.cs" />
     <Compile Include="GraphProblems\ReconstructItinerary.cs" />
+    <Compile Include="GraphProblems\SudokuSolver.cs" />
     <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
     <Compile Include="ListNodeProblems\ReverseNodesinkGroup.cs" />
