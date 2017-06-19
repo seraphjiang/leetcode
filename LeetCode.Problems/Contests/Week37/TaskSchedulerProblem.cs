@@ -8,6 +8,12 @@ namespace LeetCode.Problems.Contests.Week37
 {
     public class TaskSchedulerProblem
     {
+        /// <summary>
+        /// https://discuss.leetcode.com/topic/92966/java-o-n-time-o-1-space-1-pass-no-sorting-solution-with-detailed-explanation/2
+        /// </summary>
+        /// <param name="tasks"></param>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public int LeastInterval(char[] tasks, int n)
         {
             int[] counter = new int[26];
@@ -27,11 +33,20 @@ namespace LeetCode.Problems.Contests.Week37
                 }
             }
 
-            int partCount = max - 1;
-            int partLength = n - (maxCount - 1);
-            int emptySlots = partCount * partLength;
-            int availableTasks = tasks.Length - max * maxCount;
-            int idles = Math.Max(0, emptySlots - availableTasks);
+            int partCount = max - 1;    // how many party with empty slots
+            int partLength = n - (maxCount - 1);    // let's say, there are multple task type , all length equal max length. 
+                                                    // part lenth = cycle length - num of max tasks count = (n+1) - maxCount
+                                                    // in the case, max count is large than or equals to cycle length
+                                                    // parth length could be negative.
+                                                    // part length here means length of empty slot in a cycle
+            int emptySlots = partCount * partLength;    // part count * part Length = total avaliable empty slots.
+            int availableTasks = tasks.Length - max * maxCount; // total task ammount - (total num of task which it has max ammout of task)
+                                                                //  the remain is total non-max task left.
+                                                                // this should always large than or equals to zero
+            int idles = Math.Max(0, emptySlots - availableTasks); //
+                                             // idles = emptys - available 
+                                             // = partCount*partLength - (task.Length - max * maxCount)
+                                             // = (max-1)* (n+1 - maxCount) - (task.Length - max * maxCount)
 
             return tasks.Length + idles;
         }
