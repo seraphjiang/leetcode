@@ -122,5 +122,17 @@ namespace LeetCode.Tests.ContestTests
             var a = o.LeastInterval(input, 1);
             Assert.AreEqual(9, a);
         }
+
+        [TestMethod]
+        public void Test_TaskSchedulerProblem_12()
+        {
+            var o = new TaskSchedulerProblem();
+            var input = "AAABBCC".ToCharArray();
+            Assert.AreEqual(7, o.LeastInterval(input, 1));
+            Assert.AreEqual(7, o.LeastInterval(input, 2));
+            Assert.AreEqual(9, o.LeastInterval(input, 3));
+            Assert.AreEqual(11, o.LeastInterval(input, 4));
+            Assert.AreEqual(13, o.LeastInterval(input, 5));
+        }
     }
 }
