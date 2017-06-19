@@ -63,6 +63,7 @@
     <Compile Include="DesignProblemsTests\LRUCacheTests.cs" />
     <Compile Include="DesignProblemsTests\LFUCacheTests.cs" />
     <Compile Include="DPProblemsTests\RegularExpressionMatchingTests.cs" />
+    <Compile Include="DPProblemsTests\JumpGameIITests.cs" />
     <Compile Include="DPProblemsTests\WordBreakIITests.cs" />
     <Compile Include="GraphProblemsTests\ReconstructItineraryTest.cs" />
     <Compile Include="GraphProblemsTests\SudokuSolverTests.cs" />
