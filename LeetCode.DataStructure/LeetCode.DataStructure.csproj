@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BinaryHeap.cs" />
     <Compile Include="IPriorityQueue.cs" />
+    <Compile Include="LeetCodeDataStructures\Interval.cs" />
     <Compile Include="LeetCodeDataStructures\ListNode.cs" />
     <Compile Include="LeetCodeDataStructures\Point.cs" />
     <Compile Include="PriorityQueue.cs" />
