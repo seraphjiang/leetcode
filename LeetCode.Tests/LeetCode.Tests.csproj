@@ -74,6 +74,7 @@
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
     <Compile Include="MathProblemsTests\MaxPointsOnALineTests.cs" />
+    <Compile Include="MathProblemsTests\ValidNumberTests.cs" />
     <Compile Include="StackProblemsTests\LargestRectangleinHistogramTests.cs" />
     <Compile Include="StringProblemsTests\SubstringwithConcatenationofAllWordsTests.cs" />
     <Compile Include="StringProblemsTests\BasicCalculatorIITests.cs" />
