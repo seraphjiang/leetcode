@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ArrayProblems\FindFirstMissingPositive.cs" />
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
+    <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
     <Compile Include="BinaryTreeProblems\SerializeandDeserializeBinaryTree.cs" />
     <Compile Include="Contests\Week34\RangeAddition.cs" />

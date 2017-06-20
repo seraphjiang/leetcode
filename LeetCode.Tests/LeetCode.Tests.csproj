@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="ArrayProblemsTests\FindFirstMissingPositiveTests.cs" />
     <Compile Include="ArrayProblemsTests\MedianofTwoSortedArraysTests.cs" />
+    <Compile Include="BacktrackingProblemsTests\NQueensTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
     <Compile Include="ContestTests\Week37Tests.cs" />
