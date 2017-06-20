@@ -41,6 +41,12 @@ namespace LeetCode.Problems.MathProblems
             }
         }
 
+        /// <summary>
+        /// http://blog.csdn.net/kenden23/article/details/18696083
+        /// http://blog.csdn.net/chouclee/article/details/44274473
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public bool IsNumberDFA(String s)
         {
             // build state table
