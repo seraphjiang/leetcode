@@ -46,7 +46,7 @@ namespace LeetCode.Problems.BacktrackingProblems
             for (var i = 0; i < nq.Count; i++)
             {
                 if (i != row && nq[i][col] == 'Q') return false;
-                if (i != col && nq[row][i] == 'Q') return false;
+                //if (i != col && nq[row][i] == 'Q') return false;// no need to check row duplicate
             }
 
             for (var i = 0; i < nq.Count; i++)
@@ -61,24 +61,24 @@ namespace LeetCode.Problems.BacktrackingProblems
             {
                 if (nq[x][y] == 'Q') return false;
             }
+            //x = row;
+            //y = col;
+            //while (++x < nq.Count && ++y < nq.Count) // bottom right
+            //{
+            //    if (nq[x][y] == 'Q') return false;
+            //}
             x = row;
             y = col;
-            while (++x < nq.Count && ++y < nq.Count) // bottom right
+            while (--x >= 0 && ++y < nq.Count) // up right
             {
                 if (nq[x][y] == 'Q') return false;
             }
-            x = row;
-            y = col;
-            while (--x >=0 && ++y < nq.Count) // up right
-            {
-                if (nq[x][y] == 'Q') return false;
-            }
-            x = row;
-            y = col;
-            while (++x < nq.Count && --y >=0) // bottom left
-            {
-                if (nq[x][y] == 'Q') return false;
-            }
+            //x = row;
+            //y = col;
+            //while (++x < nq.Count && --y >=0) // bottom left
+            //{
+            //    if (nq[x][y] == 'Q') return false;
+            //}
 
             return true;
         }
