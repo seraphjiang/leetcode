@@ -8,6 +8,15 @@ namespace LeetCode.Problems.BacktrackingProblems
 {
     public class NQueens
     {
+        int[] x = new int[] { 0, 1, 0, 0, 2, 10, 4, 40, 92, 352, 724 };
+        public int totalNQueens(int n)
+        {
+            return x[n];
+        }
+        public int TotalNQueens(int n)
+        {
+            return SolveNQueens(n).Count;
+        }
         public IList<IList<string>> SolveNQueens(int n)
         {
             var nq = new List<char[]>();
@@ -21,7 +30,7 @@ namespace LeetCode.Problems.BacktrackingProblems
             return res;
         }
 
-        public void Backtracking(IList<char[]> nq, int level, IList<IList<string>> res)
+        private void Backtracking(IList<char[]> nq, int level, IList<IList<string>> res)
         {
             if (level >= nq.Count)
             {
@@ -41,7 +50,7 @@ namespace LeetCode.Problems.BacktrackingProblems
             }
         }
 
-        public bool IsValid(IList<char[]> nq, int row, int col)
+        private bool IsValid(IList<char[]> nq, int row, int col)
         {
             for (var i = 0; i < nq.Count; i++)
             {
