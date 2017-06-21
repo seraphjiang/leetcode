@@ -88,6 +88,7 @@
     <Compile Include="StringProblemsTests\TextJustificationTests.cs" />
     <Compile Include="TrappingRainWaterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrieProblemsTests\InterleavingStringTests.cs" />
     <Compile Include="TrieProblemsTests\WordSearchIITests.cs" />
   </ItemGroup>
   <ItemGroup>

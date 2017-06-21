@@ -84,6 +84,7 @@
     <Compile Include="StackProblems\LargestRectangleinHistogram.cs" />
     <Compile Include="StringProblems\BasicCalculator.cs" />
     <Compile Include="StringProblems\BasicCalculatorII.cs" />
+    <Compile Include="StringProblems\InterleavingString.cs" />
     <Compile Include="StringProblems\LongestValidParenthesesProblem.cs" />
     <Compile Include="StringProblems\ScrmbleString.cs" />
     <Compile Include="StringProblems\ShortestPalindrome.cs" />
