@@ -85,6 +85,7 @@
     <Compile Include="StringProblems\BasicCalculator.cs" />
     <Compile Include="StringProblems\BasicCalculatorII.cs" />
     <Compile Include="StringProblems\LongestValidParenthesesProblem.cs" />
+    <Compile Include="StringProblems\ScrmbleString.cs" />
     <Compile Include="StringProblems\ShortestPalindrome.cs" />
     <Compile Include="StringProblems\SubstringwithConcatenationofAllWords.cs" />
     <Compile Include="StringProblems\TextJustification.cs" />
