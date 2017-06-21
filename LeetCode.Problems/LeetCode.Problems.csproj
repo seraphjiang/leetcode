@@ -67,6 +67,7 @@
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
     <Compile Include="DynamicProgrammingProblems\EditDistance.cs" />
     <Compile Include="DynamicProgrammingProblems\JumpGameII.cs" />
+    <Compile Include="DynamicProgrammingProblems\MaximalRectangleProblem.cs" />
     <Compile Include="DynamicProgrammingProblems\RegularExpressionMatching.cs" />
     <Compile Include="DynamicProgrammingProblems\WordBreakII.cs" />
     <Compile Include="GraphProblems\ReconstructItinerary.cs" />
