@@ -62,6 +62,7 @@
     <Compile Include="BacktrackingProblemsTests\NQueensTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
+    <Compile Include="BinaryTreeProblemsTests\RecoverBinarySearchTreeTests.cs" />
     <Compile Include="ContestTests\Week37Tests.cs" />
     <Compile Include="ContestTests\Week36Tests.cs" />
     <Compile Include="ContestTests\Week34Tests.cs" />

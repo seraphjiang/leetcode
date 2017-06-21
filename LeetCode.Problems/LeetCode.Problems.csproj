@@ -45,6 +45,7 @@
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
+    <Compile Include="BinaryTreeProblems\RecoverBinarySearchTree.cs" />
     <Compile Include="BinaryTreeProblems\SerializeandDeserializeBinaryTree.cs" />
     <Compile Include="Contests\Week34\RangeAddition.cs" />
     <Compile Include="Contests\Week34\MinimumIndexSumofTwoLists.cs" />

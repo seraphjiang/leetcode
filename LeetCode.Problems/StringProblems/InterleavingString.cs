@@ -14,7 +14,7 @@ namespace LeetCode.Problems.StringProblems
             if (string.IsNullOrEmpty(s3)) return false;
             if (string.IsNullOrEmpty(s1) || string.IsNullOrEmpty(s2)) return s3.Equals(s1 + s2);
             if (s1.Length + s2.Length != s3.Length) return false;
-            var dp = new bool[s1.Length, s2.Length];
+            var dp = new bool[s1.Length+1, s2.Length+1];
             for (var i = 0; i <= s1.Length; ++i)
             {
                 for (var j = 0; j <= s2.Length; ++j)
