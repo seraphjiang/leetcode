@@ -69,6 +69,7 @@
     <Compile Include="DynamicProgrammingProblems\BestTimetoBuyandSellStockI.cs" />
     <Compile Include="DynamicProgrammingProblems\BestTimetoBuyandSellStockII.cs" />
     <Compile Include="DynamicProgrammingProblems\BestTimetoBuyandSellStockIII.cs" />
+    <Compile Include="DynamicProgrammingProblems\BestTimetoBuyandSellStockIV.cs" />
     <Compile Include="DynamicProgrammingProblems\DistinctSubsequences.cs" />
     <Compile Include="DynamicProgrammingProblems\EditDistance.cs" />
     <Compile Include="DynamicProgrammingProblems\JumpGameII.cs" />

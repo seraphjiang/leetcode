@@ -15,11 +15,13 @@ namespace LeetCode.Problems.DynamicProgrammingProblems
     {
         public int MaxProfit(int[] prices)
         {
-            return MaxProfile(prices, 2);
+            return MaxProfit(prices, 2);
         }
 
-        public int MaxProfile(int[] prices, int k)
+        public int MaxProfit(int[] prices, int k)
         {
+            if (prices == null || prices.Length < 2) return 0;
+
             var global = new int[prices.Length, k + 1];
             var local = new int[prices.Length, k + 1];
 
