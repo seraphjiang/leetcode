@@ -66,6 +66,7 @@
     <Compile Include="Contests\Week37\TaskSchedulerProblem.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
+    <Compile Include="DynamicProgrammingProblems\DistinctSubsequences.cs" />
     <Compile Include="DynamicProgrammingProblems\EditDistance.cs" />
     <Compile Include="DynamicProgrammingProblems\JumpGameII.cs" />
     <Compile Include="DynamicProgrammingProblems\MaximalRectangleProblem.cs" />
