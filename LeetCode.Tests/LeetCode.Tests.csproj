@@ -73,6 +73,7 @@
     <Compile Include="DPProblemsTests\JumpGameIITests.cs" />
     <Compile Include="DPProblemsTests\EditDistanceTests.cs" />
     <Compile Include="DPProblemsTests\MaximalRectangleTests.cs" />
+    <Compile Include="DPProblemsTests\BestTimetoBuyandSellStockTests.cs" />
     <Compile Include="DPProblemsTests\WordBreakIITests.cs" />
     <Compile Include="GraphProblemsTests\ReconstructItineraryTest.cs" />
     <Compile Include="GraphProblemsTests\SudokuSolverTests.cs" />
