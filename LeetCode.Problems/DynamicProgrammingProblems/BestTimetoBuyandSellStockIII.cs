@@ -13,6 +13,30 @@ namespace LeetCode.Problems.DynamicProgrammingProblems
     /// </summary>
     public class BestTimetoBuyandSellStockIII
     {
+        public int MaxProfit(int[] prices)
+        {
+            return MaxProfile(prices, 2);
+        }
+
+        public int MaxProfile(int[] prices, int k)
+        {
+            var global = new int[prices.Length, k + 1];
+            var local = new int[prices.Length, k + 1];
+
+            for (var i = 1; i < prices.Length; ++i)
+            {
+                var diff = prices[i] - prices[i - 1];
+                for (var j = 1; j <= k; ++j)
+                {
+                    //local[i, j] = Math.Max(local[i - 1, j - 1] + Math.Max(diff, 0), global[i - 1, j - 1] + diff);
+                    local[i, j] = Math.Max(local[i - 1, j] + diff, global[i - 1, j - 1] + Math.Max(diff, 0));
+                    global[i, j] = Math.Max(local[i, j], global[i - 1, j]);
+                }
+            }
+
+            return global[prices.Length - 1, k];
+        }
+
         public int MaxProfitDPSolution1(int[] prices)
         {
             if (prices == null || prices.Length < 2) return 0;
