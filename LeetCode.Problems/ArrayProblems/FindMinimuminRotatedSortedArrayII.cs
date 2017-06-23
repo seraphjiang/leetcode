@@ -25,7 +25,7 @@ namespace LeetCode.Problems.ArrayProblems
                 }
                 else
                 {
-                    hi--;// because we are ask for min/
+                    hi--;// because we are ask for min
                 }
             }
 

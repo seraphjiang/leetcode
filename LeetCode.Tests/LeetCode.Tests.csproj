@@ -59,6 +59,7 @@
     <Compile Include="ArrayProblemsTests\FindFirstMissingPositiveTests.cs" />
     <Compile Include="ArrayProblemsTests\MedianofTwoSortedArraysTests.cs" />
     <Compile Include="ArrayProblemsTests\InsertIntervalTests.cs" />
+    <Compile Include="ArrayProblemsTests\MaximumGapTests.cs" />
     <Compile Include="BacktrackingProblemsTests\NQueensTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
