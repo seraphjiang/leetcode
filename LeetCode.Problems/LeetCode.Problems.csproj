@@ -79,6 +79,7 @@
     <Compile Include="DynamicProgrammingProblems\WordBreakII.cs" />
     <Compile Include="GraphProblems\ReconstructItinerary.cs" />
     <Compile Include="GraphProblems\SudokuSolver.cs" />
+    <Compile Include="GreedyProblems\CandyProblem.cs" />
     <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
     <Compile Include="ListNodeProblems\ReverseNodesinkGroup.cs" />
@@ -102,6 +103,10 @@
     <Compile Include="TrieProblems\WordSearchII.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Commons\Commons.csproj">
+      <Project>{3160871c-c85c-4cfc-a67a-fe73035c234c}</Project>
+      <Name>Commons</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LeetCode.DataStructure\LeetCode.DataStructure.csproj">
       <Project>{3c6323b3-cb9d-44b1-8feb-a13270b4f501}</Project>
       <Name>LeetCode.DataStructure</Name>

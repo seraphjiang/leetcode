@@ -8,6 +8,13 @@ namespace Commons
 {
     public static class ArrayExtensions
     {
+        public static void Fill<T>(this T[] arr, T val)
+        {
+            for(var i = 0; i < arr.Length; i++)
+            {
+                arr[i] = val;
+            }
+        }
         public static char[,] To2D(this char[][] arr)
         {
             var ret = new char[arr.Length, arr[0].Length];

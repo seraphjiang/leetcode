@@ -78,6 +78,7 @@
     <Compile Include="DPProblemsTests\WordBreakIITests.cs" />
     <Compile Include="GraphProblemsTests\ReconstructItineraryTest.cs" />
     <Compile Include="GraphProblemsTests\SudokuSolverTests.cs" />
+    <Compile Include="GreedyProblemsTests\CandyTests.cs" />
     <Compile Include="GreedyProblemsTests\WildcardMatchTests.cs" />
     <Compile Include="ListNodeProblemsTests\ReverseNodesinkGroupTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
