@@ -89,6 +89,7 @@
     <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestIncreasingPathInMatrix.cs" />
     <Compile Include="MathProblems\MaxPointsOnALine.cs" />
+    <Compile Include="MathProblems\NumberofDigitOne.cs" />
     <Compile Include="MathProblems\ValidNumber.cs" />
     <Compile Include="SlidingWindow\MinimumWindowSubstring.cs" />
     <Compile Include="SlidingWindow\SlidingWindowMaximum.cs" />
