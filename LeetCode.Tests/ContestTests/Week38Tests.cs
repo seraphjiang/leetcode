@@ -12,7 +12,7 @@ namespace LeetCode.Tests.ContestTests
 
         public void Test_Contest_Week38_Problem1()
         {
-            var o = new Class1();
+            var o = new MaximumProductofThreeNumbers();
             var exp = 1;
 
             Assert.AreEqual(exp, exp);
@@ -24,9 +24,39 @@ namespace LeetCode.Tests.ContestTests
         public void Test_Contest_Week38_Problem2()
         {
             var o = new CourseScheduleIII();
-            var exp = 1;
+            Assert.AreEqual(1, o.ScheduleCourse(new int[,] { { 1, 2 } }));
+        }
+        [TestMethod]
+        [TestProperty("WeeklyContest", "38")]
 
-            Assert.AreEqual(exp, exp);
+        public void Test_Contest_Week38_Problem2_1()
+        {
+            var o = new CourseScheduleIII();
+            Assert.AreEqual(3, o.ScheduleCourse(new int[,] {
+                { 100, 200 },
+            { 200,1300},
+            { 1000,1250},
+            {2000,3000 } }));
+        }
+        [TestMethod]
+        [TestProperty("WeeklyContest", "38")]
+
+        public void Test_Contest_Week38_Problem2_2()
+        {
+            var o = new CourseScheduleIII();
+            Assert.AreEqual(3, o.ScheduleCourse(new int[,] {
+                { 9, 14 },
+            { 7,12},
+            { 1,11},
+            { 4,7 }}));
+        }
+        [TestMethod]
+        [TestProperty("WeeklyContest", "38")]
+
+        public void Test_Contest_Week38_Problem2_3()
+        {
+            var o = new CourseScheduleIII();
+            Assert.AreEqual(4, o.ScheduleCourse(new int[,]{{7, 17},{3, 12},{10, 20},{9, 10},{5, 20},{10, 19},{4, 18}}));
         }
         [TestMethod]
         [TestProperty("WeeklyContest", "38")]

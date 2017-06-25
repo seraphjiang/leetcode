@@ -67,7 +67,7 @@
     <Compile Include="Contests\Week37\AddOneRowtoTree.cs" />
     <Compile Include="Contests\Week37\MinimumFactorization.cs" />
     <Compile Include="Contests\Week37\TaskSchedulerProblem.cs" />
-    <Compile Include="Contests\Week38\Class1.cs" />
+    <Compile Include="Contests\Week38\MaximumProductofThreeNumbers.cs" />
     <Compile Include="Contests\Week38\CourseScheduleIII.cs" />
     <Compile Include="Contests\Week38\KInversePairsArray.cs" />
     <Compile Include="Contests\Week38\Excel.cs" />
