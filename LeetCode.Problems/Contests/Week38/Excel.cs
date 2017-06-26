@@ -8,18 +8,147 @@ namespace LeetCode.Problems.Contests.Week38
 {
     public class Excel
     {
+        int h;
+        int w;
+        int[,] excel;
+        string[,][] formula;
+        public Excel(int H, char W)
+        {
+            h = H; // 1-26
+            w = W - 'A' + 1; // 1-26
+            excel = new int[h, w];
+            formula = new string[h, w][];
+        }
+
+        public void Set(int r, char c, int v)
+        {
+            Set(r - 1, c - 'A', v);
+        }
+
+        void Set(int r, int c, int v)
+        {
+            formula[r, c] = null;
+            excel[r, c] = v;
+        }
+
+        public int Get(int r, char c)
+        {
+            return Get(r - 1, c - 'A');
+        }
+
+        int Get(int r, int c)
+        {
+            if (formula[r, c] != null)
+            {
+                return Calc(r, c);
+            }
+            else
+            {
+                return excel[r, c];
+            }
+        }
+
+        int Get(string s)
+        {
+            var r = int.Parse(s.Substring(1)) - 1;
+            var c = s[0] - 'A';
+            return Get(r, c);
+        }
+
+        public int Sum(int r, char c, string[] strs)
+        {
+            return Sum(r - 1, c - 'A', strs);
+        }
+
+        int Sum(int r, int c, string[] strs)
+        {
+            formula[r, c] = strs;
+            return Get(r, c);
+        }
+
+        int Calc(int r, int c)
+        {
+            var strs = formula[r, c];
+            var total = 0;
+            foreach (var s in strs)
+            {
+                total += CalcRange(s);
+            }
+
+            return total;
+        }
+        int CalcRange(string s)
+        {
+            var index = s.IndexOf(":");
+            if (index >= 0)
+            {
+                var upleft = s.Substring(0, index);
+                var bottomright = s.Substring(index + 1);
+
+                if (upleft.Equals(bottomright))
+                {
+                    return Get(upleft);
+                }
+                else
+                {
+                    var ulRow = int.Parse(upleft.Substring(1)) - 1; // be careful about row, col position in string. A..Z is col not row.
+                    var ulCol = upleft[0] - 'A';
+
+                    var brRow = int.Parse(bottomright.Substring(1)) - 1;
+                    var brCol = bottomright[0] - 'A';
+                    var total = 0;
+                    for (var i = ulRow; i <= brRow; i++)
+                    {
+                        for (var j = ulCol; j <= brCol; j++)
+                        {
+                            if (formula[i, j] != null)
+                                total += Calc(i, j);
+                            else
+                                total += excel[i, j];
+                        }
+                    }
+
+                    return total;
+                }
+            }
+            else
+            {
+                return Get(s);
+            }
+        }
+    }
+
+    //public class Excel
+    //{
+    //    public Excel(int H, char W)
+    //    {
+
+    //    }
+
+    //    public void Set(int r, char c, int v)
+    //    {
+
+    //    }
+
+    //    public int Get(int r, char c)
+    //    {
+
+    //    }
+
+    //    public int Sum(int r, char c, string[] strs)
+    //    {
+
+    //    }
+    //}
+
+    public class ExcelWrong
+    {
         int[,] excel;
         string[,][] formula;
         int h;
         int w;
-        public Excel(int H, string W)
-        {
-            h = H;
-            w = (W[0] - 'A') + 1;
-            excel = new int[h, w];
-            formula = new string[h, w][];
-        }
-        public Excel(int H, char W)
+
+        public ExcelWrong(int H, char W)
         {
             h = H;
             w = (W - 'A') + 1;
@@ -31,8 +160,8 @@ namespace LeetCode.Problems.Contests.Week38
         {
             if (r < h && (c - 'A') < w)
             {
-                formula[r, c - 'A'] = null;
-                excel[r, c - 'A'] = v;
+                formula[r - 1, c - 'A'] = null;
+                excel[r - 1, c - 'A'] = v;
             }
         }
 
@@ -40,10 +169,10 @@ namespace LeetCode.Problems.Contests.Week38
         {
             if (r < h && (c - 'A') < w)
             {
-                if (formula[r, c - 'A'] == null)
-                    return excel[r, c - 'A'];
+                if (formula[r - 1, c - 'A'] == null)
+                    return excel[r - 1, c - 'A'];
                 else
-                    return Sum(r, c - 'A');
+                    return Sum(r - 1, c - 'A');
             }
 
             return 0;
@@ -53,7 +182,7 @@ namespace LeetCode.Problems.Contests.Week38
         {
             if (r < h && (c - 'A') < w)
             {
-                formula[r, c - 'A'] = strs;
+                formula[r - 1, c - 'A'] = strs;
                 var sum = 0;
                 foreach (var s in strs)
                 {
@@ -89,7 +218,7 @@ namespace LeetCode.Problems.Contests.Week38
             if (sp > 0)
             {
                 A1 = s.Substring(0, sp);
-                A2 = s.Substring(sp);
+                A2 = s.Substring(sp + 1);
             }
             else
             {
@@ -122,7 +251,7 @@ namespace LeetCode.Problems.Contests.Week38
         private void Parse(string s, out int c, out int r)
         {
             c = s[0] - 'A';
-            r = int.Parse(s.Substring(1));
+            r = int.Parse(s.Substring(1)) - 1;
         }
     }
 }
