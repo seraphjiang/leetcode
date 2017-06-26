@@ -26,7 +26,7 @@ namespace OtherSites.Problems.Pramp
             for(var i = 0; i < word.Length; ++i)
             {
                 var c = (int)word[i];
-                c = c - pre;
+                c = c - pre; // be careful c could be negative. negative char might be a unicode. so we should use int for c before convert back to char.
                 while (c < 'a')
                 {
                     c += 26;
