@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pramp\DecryptMessage.cs" />
+    <Compile Include="Pramp\SmallestSubstringofAllCharacters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StackOverflow\BinaryTreeInOrderIterator.cs" />
   </ItemGroup>
