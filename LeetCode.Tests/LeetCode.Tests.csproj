@@ -90,6 +90,7 @@
     <Compile Include="MathProblemsTests\NumberofDigitOneTests.cs" />
     <Compile Include="MathProblemsTests\IntegertoEnglishWordsTests.cs" />
     <Compile Include="MathProblemsTests\ValidNumberTests.cs" />
+    <Compile Include="OtherSites\PrampTests.cs" />
     <Compile Include="StackProblemsTests\LargestRectangleinHistogramTests.cs" />
     <Compile Include="StringProblemsTests\SubstringwithConcatenationofAllWordsTests.cs" />
     <Compile Include="StringProblemsTests\BasicCalculatorIITests.cs" />
@@ -112,6 +113,10 @@
     <ProjectReference Include="..\LeetCode.Problems\LeetCode.Problems.csproj">
       <Project>{439724c3-474b-4640-b842-f9bbb010f3b4}</Project>
       <Name>LeetCode.Problems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OtherSites.Problems\OtherSites.Problems.csproj">
+      <Project>{0891b50b-a8f7-46bb-806d-94f9d205bc8c}</Project>
+      <Name>OtherSites.Problems</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
