@@ -72,6 +72,7 @@
     <Compile Include="ContestTests\Week35Tests.cs" />
     <Compile Include="DesignProblemsTests\LRUCacheTests.cs" />
     <Compile Include="DesignProblemsTests\LFUCacheTests.cs" />
+    <Compile Include="DFSBFS\RemoveInvalidParenthesesTests.cs" />
     <Compile Include="DPProblemsTests\RegularExpressionMatchingTests.cs" />
     <Compile Include="DPProblemsTests\JumpGameIITests.cs" />
     <Compile Include="DPProblemsTests\EditDistanceTests.cs" />
