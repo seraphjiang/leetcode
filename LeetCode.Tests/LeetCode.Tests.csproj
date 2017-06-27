@@ -61,6 +61,7 @@
     <Compile Include="ArrayProblemsTests\InsertIntervalTests.cs" />
     <Compile Include="ArrayProblemsTests\MaximumGapTests.cs" />
     <Compile Include="BacktrackingProblemsTests\NQueensTests.cs" />
+    <Compile Include="BacktrackingProblemsTests\ExpressionAddOperatorsTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\SerializeandDeserializeBinaryTreeTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\RecoverBinarySearchTreeTests.cs" />

@@ -45,6 +45,7 @@
     <Compile Include="ArrayProblems\InsertInterval.cs" />
     <Compile Include="ArrayProblems\MaximumGapProblem.cs" />
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
+    <Compile Include="BacktrackingProblems\ExpressionAddOperators.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BacktrackingProblems\WordLadderII.cs" />
     <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
