@@ -8,7 +8,59 @@ namespace LeetCode.Problems.DFSBFS
 {
     public class RemoveInvalidParenthesesProblem
     {
+        public IList<string> RemoveInvalidParenthesesBFS(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return new List<string> { s };
+            var res = new List<string>();
+            var hs = new HashSet<string>();
+            var q = new Queue<string>();
+            q.Enqueue(s);
+            hs.Add(s);
+            var found = false;
+            while (q.Count > 0)
+            {
+                var count = q.Count;
+                for (var j = 0; j < count; j++)
+                {
+                    var n = q.Dequeue();
+                    if (IsValid(n))
+                    {
+                        found = true;
+                        res.Add(n);
+                    }
+                    if (found) continue;
 
+                    for (var i = 0; i < n.Length; ++i)
+                    {
+                        if (s[i] != '(' && s[i] != ')') continue;
+                        var n1 = new StringBuilder(n);
+                        n1.Remove(i, 1);
+                        var newStr = n1.ToString();
+
+                        if (!hs.Contains(newStr))
+                        {
+                            q.Enqueue(newStr);
+                            hs.Add(newStr);
+                        }
+                    }
+                }
+                if (found) break;
+            }
+
+            return res.ToList();
+        }
+
+        bool IsValid(string s)
+        {
+            var stack = 0;
+            for (var i = 0; i < s.Length; ++i)
+            {
+                if (s[i] == '(') stack++;
+                else if (s[i] == ')' && stack-- == 0) return false;
+            }
+
+            return stack == 0;
+        }
 
         public IList<string> RemoveInvalidParentheses(string s)
         {
