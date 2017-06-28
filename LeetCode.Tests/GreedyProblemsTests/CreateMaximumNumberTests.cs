@@ -8,6 +8,7 @@ namespace LeetCode.Tests.GreedyProblemsTests
     public class CreateMaximumNumberTests
     {
         [TestMethod]
+        [TestProperty("Google", "Greedy")]
         public void Test_CreateMaximumNumber_1()
         {
             var o = new CreateMaximumNumber();
@@ -16,6 +17,7 @@ namespace LeetCode.Tests.GreedyProblemsTests
             Assert.IsTrue(act.SequenceEqual(new int[] { 9, 8, 6, 5, 3 }));
         }
         [TestMethod]
+        [TestProperty("Google", "Greedy")]
         public void Test_CreateMaximumNumber_2()
         {
             var o = new CreateMaximumNumber();
@@ -24,6 +26,8 @@ namespace LeetCode.Tests.GreedyProblemsTests
             Assert.IsTrue(act.SequenceEqual(new int[] { 9, 7, 5 }));
         }
         [TestMethod]
+        [TestProperty("Google", "Greedy")]
+
         public void Test_CreateMaximumNumber_3()
         {
             var o = new CreateMaximumNumber();
@@ -32,6 +36,8 @@ namespace LeetCode.Tests.GreedyProblemsTests
             Assert.IsTrue(act.SequenceEqual(new int[] { 9, 9, 9, 7, 3, 2, 3, 1, 1 }));
         }
         [TestMethod]
+        [TestProperty("Google", "Greedy")]
+
         public void Test_CreateMaximumNumber_4()
         {
             var o = new CreateMaximumNumber();
