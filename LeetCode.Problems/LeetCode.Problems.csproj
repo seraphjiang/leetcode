@@ -94,6 +94,7 @@
     <Compile Include="GreedyProblems\RemoveDuplicateLettersProblem.cs" />
     <Compile Include="GreedyProblems\WildcardMath.cs" />
     <Compile Include="ListNodeProblems\MergeKSortedLists.cs" />
+    <Compile Include="ListNodeProblems\ReverseLinkedList.cs" />
     <Compile Include="ListNodeProblems\ReverseNodesinkGroup.cs" />
     <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestIncreasingPathInMatrix.cs" />

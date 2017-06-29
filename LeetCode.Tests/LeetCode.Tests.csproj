@@ -87,8 +87,10 @@
     <Compile Include="GreedyProblemsTests\CreateMaximumNumberTests.cs" />
     <Compile Include="GreedyProblemsTests\WildcardMatchTests.cs" />
     <Compile Include="ListNodeProblemsTests\ReverseNodesinkGroupTests.cs" />
+    <Compile Include="ListNodeProblemsTests\ReverseLinkedListTests.cs" />
     <Compile Include="LongestConsecutiveSequenceTests.cs" />
     <Compile Include="LongestIncreasingPathInMatrixTests.cs" />
+    <Compile Include="MathProblemsTests\GaryCode.cs" />
     <Compile Include="MathProblemsTests\MaxPointsOnALineTests.cs" />
     <Compile Include="MathProblemsTests\NumberofDigitOneTests.cs" />
     <Compile Include="MathProblemsTests\IntegertoEnglishWordsTests.cs" />
