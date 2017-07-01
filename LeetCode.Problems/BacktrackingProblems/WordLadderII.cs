@@ -80,7 +80,6 @@ namespace LeetCode.Problems.BacktrackingProblems
                         }
                     }
                 }
-
             }
 
             temp.RemoveAt(temp.Count - 1);
