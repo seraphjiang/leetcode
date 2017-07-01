@@ -1,4 +1,5 @@
 ﻿using Commons;
+using LeetCode.Book.Examples;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +21,20 @@ namespace Tools
             //ExternalMemorySort.MergeSort("ShuffleList.txt", "Sorted_List.txt", 2);
 
 
-            ExternalMemorySort.GenerateShuffleList();
-            ExternalMemorySort.MergeSort();
+            //ExternalMemorySort.GenerateShuffleList();
+            //ExternalMemorySort.MergeSort();
 
             //ExternalMemorySort.SplitAndSortFiles();
             //ExternalMemorySort.ReadWrite();
+
+            try
+            {
+                OutOfMemory.BurnMemory();
+            }
+            catch(Exception err)
+            {
+                Console.WriteLine(err.Message);
+            }
         }
     }
 }
