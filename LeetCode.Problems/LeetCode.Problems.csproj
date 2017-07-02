@@ -72,6 +72,10 @@
     <Compile Include="Contests\Week38\CourseScheduleIII.cs" />
     <Compile Include="Contests\Week38\KInversePairsArray.cs" />
     <Compile Include="Contests\Week38\Excel.cs" />
+    <Compile Include="Contests\Week39\Class1.cs" />
+    <Compile Include="Contests\Week39\Class2.cs" />
+    <Compile Include="Contests\Week39\Class3.cs" />
+    <Compile Include="Contests\Week39\Class4.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
     <Compile Include="DFSBFS\RemoveInvalidParenthesesProblem.cs" />
@@ -126,6 +130,9 @@
       <Project>{3c6323b3-cb9d-44b1-8feb-a13270b4f501}</Project>
       <Name>LeetCode.DataStructure</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contests\Week40\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
