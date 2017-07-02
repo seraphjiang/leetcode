@@ -93,13 +93,6 @@ namespace LeetCode.Book.Examples
             var pre1 = GetPrevious(head, n1) ?? dummy;
             var pre2 = GetPrevious(head, n2) ?? dummy;
 
-            if(n2.next == n1)
-            {
-                var t = n1;
-                n1 = n2;
-                n2 = t;
-            }
-
             var next = n2.next;
             if(n1.next == n2) // handle 10->8->6->5  swap 10, 8 node
             {
