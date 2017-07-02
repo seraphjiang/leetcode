@@ -43,6 +43,13 @@
     <Compile Include="MatrixRotation.cs" />
     <Compile Include="OutOfMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinglyLinkedList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LeetCode.DataStructure\LeetCode.DataStructure.csproj">
+      <Project>{3c6323b3-cb9d-44b1-8feb-a13270b4f501}</Project>
+      <Name>LeetCode.DataStructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

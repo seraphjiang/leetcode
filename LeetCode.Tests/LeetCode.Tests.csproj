@@ -67,6 +67,7 @@
     <Compile Include="BinaryTreeProblemsTests\BinaryTreeMaximumPathSumTests.cs" />
     <Compile Include="BinaryTreeProblemsTests\RecoverBinarySearchTreeTests.cs" />
     <Compile Include="BookTests\MatrixRotationTests.cs" />
+    <Compile Include="BookTests\SinglyLinkedListTests.cs" />
     <Compile Include="ContestTests\Week38Tests.cs" />
     <Compile Include="ContestTests\Week37Tests.cs" />
     <Compile Include="ContestTests\Week36Tests.cs" />
