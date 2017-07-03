@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LeetCode.Problems.Contests.Week39;
 using System.Collections.Generic;
 using Commons;
+using System.Linq;
 namespace LeetCode.Tests.ContestTests
 {
     [TestClass]
@@ -18,7 +19,7 @@ namespace LeetCode.Tests.ContestTests
             //var act = o.JudgeSquareSum(2147482647);
             var act = o.JudgeSquareSum(2147483645);
 
-            
+
             //Assert.AreEqual(exp, exp);
         }
 
@@ -50,15 +51,22 @@ namespace LeetCode.Tests.ContestTests
 
         public void Test_Contest_Week39_Problem3()
         {
-            var o = new Class3();
+            var o = new FindTheDerangementOfAnArray();
         }
-     
+
         [TestMethod]
         [TestProperty("WeeklyContest", "39")]
 
         public void Test_Contest_Week39_Problem4()
         {
-            var o = new Class4();
+            var o = new SmallestRangeProblem();
+            var input = new List<IList<int>>
+            {
+                new List<int>{ 4, 10, 15, 24, 26},
+                new List<int>{ 0, 9, 12, 20 },
+                new List<int>{ 5, 18, 22, 30 }
+            };
+            Assert.IsTrue(o.SmallestRange(input).SequenceEqual(new[] { 20, 24 }));
         }
     }
 }
