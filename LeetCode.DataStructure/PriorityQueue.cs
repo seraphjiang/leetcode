@@ -9,7 +9,6 @@ namespace LeetCode.DataStructure
     public abstract class PriorityQueue<T>:IPriorityQueue<T>
     {
 
-
         public abstract int Count { get; }
 
         public abstract T Dequeue();

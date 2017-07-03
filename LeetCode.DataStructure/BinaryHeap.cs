@@ -37,14 +37,7 @@ namespace LeetCode.DataStructure
             {
                 var i = list.BinarySearch(item, Comparer<T>.Create(comparison));
                 i = i >= 0 ? i : ~i;
-                if(list.Count == i)
-                {
-                    list.Add(item);
-                }
-                else
-                {
-                    list.Insert(i, item);
-                }
+                list.Insert(i, item);
             }
         }
 
