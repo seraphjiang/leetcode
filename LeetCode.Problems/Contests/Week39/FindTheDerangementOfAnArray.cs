@@ -9,7 +9,7 @@ namespace LeetCode.Problems.Contests.Week39
     public class FindTheDerangementOfAnArray
     {
         const long MOD = (long)1e9 + 7;
-        public int FindDerangement(int n)
+        public int FindDerangement1(int n)
         {
             long a = 0, b = 1, c;
             for (int i = 2; i <= n; i++)
@@ -19,6 +19,18 @@ namespace LeetCode.Problems.Contests.Week39
                 b = c;
             }
             return (int)a;
+        }
+
+        public int FindDerangement(int n)
+        {
+            long der = 1;
+            for (var i = 1; i <= n; i++)
+            {
+                Console.WriteLine(der);
+                der = (i * der + (i % 2 == 0 ? 1 : -1)) % MOD;
+            }
+
+            return (int)der;
         }
     }
 }

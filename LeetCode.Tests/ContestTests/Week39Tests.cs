@@ -52,6 +52,11 @@ namespace LeetCode.Tests.ContestTests
         public void Test_Contest_Week39_Problem3()
         {
             var o = new FindTheDerangementOfAnArray();
+            Assert.AreEqual(0, o.FindDerangement(1));
+            Assert.AreEqual(1, o.FindDerangement(2));
+            Assert.AreEqual(2, o.FindDerangement(3));
+            Assert.AreEqual(9, o.FindDerangement(4));
+
         }
 
         [TestMethod]
