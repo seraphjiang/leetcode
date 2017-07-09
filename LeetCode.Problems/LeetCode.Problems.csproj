@@ -76,6 +76,10 @@
     <Compile Include="Contests\Week39\LogSystem.cs" />
     <Compile Include="Contests\Week39\FindTheDerangementOfAnArray.cs" />
     <Compile Include="Contests\Week39\SmallestRangeProblem.cs" />
+    <Compile Include="Contests\Week40\LeetCodeProblem1.cs" />
+    <Compile Include="Contests\Week40\LeetCodeProblem2.cs" />
+    <Compile Include="Contests\Week40\LeetCodeProblem3.cs" />
+    <Compile Include="Contests\Week40\LeetCodeProblem4.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
     <Compile Include="DFSBFS\RemoveInvalidParenthesesProblem.cs" />
@@ -132,9 +136,7 @@
       <Name>LeetCode.DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Contests\Week40\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

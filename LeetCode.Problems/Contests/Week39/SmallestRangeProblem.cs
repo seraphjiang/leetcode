@@ -23,7 +23,7 @@ namespace LeetCode.Problems.Contests.Week39
 
             while (pq.Count == nums.Count)
             {
-                var cur = pq.Dequeue();
+                var cur = pq.Dequeue(); // always the min value from pq
                 if (range > max - cur[0])
                 {
                     range = max - cur[0];
