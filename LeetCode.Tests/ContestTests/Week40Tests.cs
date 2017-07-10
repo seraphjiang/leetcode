@@ -14,7 +14,7 @@ namespace LeetCode.Tests.ContestTests
 
         public void Test_Contest_Week40_Problem1()
         {
-            var o = new LeetCodeProblem1();
+            var o = new AverageofLevelsinBinaryTree();
             var exp = 1;
 
             Assert.AreEqual(exp, exp);
@@ -61,7 +61,12 @@ namespace LeetCode.Tests.ContestTests
 
         public void Test_Contest_Week40_Problem4()
         {
-            var o = new LeetCodeProblem4();
+            var o = new DecodeWaysII();
+            Assert.AreEqual(18, o.NumDecodings("1*"));
+            Assert.AreEqual(96, o.NumDecodings("**"));
+            Assert.AreEqual(11, o.NumDecodings("*1"));
+            Assert.AreEqual(404, o.NumDecodings("*1*1*0"));
+
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Problems.Contests.Week40
 {
-    public class LeetCodeProblem1
+    public class AverageofLevelsinBinaryTree
     {
         public IList<double> AverageOfLevels(TreeNode root)
         {
