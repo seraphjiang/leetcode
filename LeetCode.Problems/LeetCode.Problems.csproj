@@ -77,8 +77,8 @@
     <Compile Include="Contests\Week39\FindTheDerangementOfAnArray.cs" />
     <Compile Include="Contests\Week39\SmallestRangeProblem.cs" />
     <Compile Include="Contests\Week40\LeetCodeProblem1.cs" />
-    <Compile Include="Contests\Week40\LeetCodeProblem2.cs" />
-    <Compile Include="Contests\Week40\LeetCodeProblem3.cs" />
+    <Compile Include="Contests\Week40\SolveTheEquation.cs" />
+    <Compile Include="Contests\Week40\ShoppingOffersProblem.cs" />
     <Compile Include="Contests\Week40\LeetCodeProblem4.cs" />
     <Compile Include="DesignProblems\LeastFrequentlyUsedCache.cs" />
     <Compile Include="DesignProblems\LeastRecentlyUsedCache.cs" />
