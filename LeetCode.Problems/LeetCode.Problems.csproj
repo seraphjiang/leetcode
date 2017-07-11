@@ -47,6 +47,9 @@
     <Compile Include="ArrayProblems\MaximumGapProblem.cs" />
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
     <Compile Include="BacktrackingProblems\ExpressionAddOperators.cs" />
+    <Compile Include="BacktrackingProblems\FlipGame.cs" />
+    <Compile Include="BacktrackingProblems\LeetCodeProblem1.cs" />
+    <Compile Include="BacktrackingProblems\LeetCodeProblem2.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BacktrackingProblems\WordLadderII.cs" />
     <Compile Include="BinaryTreeProblems\BinaryTreeMaximumPathSum.cs" />
