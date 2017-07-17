@@ -51,8 +51,9 @@
     <Compile Include="BacktrackingProblems\ExpressionAddOperators.cs" />
     <Compile Include="Contests\Week41\MaximumAverageSubarrayI.cs" />
     <Compile Include="Contests\Week41\ExclusiveTimeofFunctions.cs" />
-    <Compile Include="Contests\Week41\LeetCodeProblem3.cs" />
-    <Compile Include="Contests\Week41\LeetCodeProblem4.cs" />
+    <Compile Include="Contests\Week41\MaximumAverageSubarrayII.cs" />
+    <Compile Include="Contests\Week41\DesignSearchAutocompleteSystem.cs" />
+    <Compile Include="DynamicProgrammingProblems\PaintHouse.cs" />
     <Compile Include="StringProblems\FlipGame.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BacktrackingProblems\WordLadderII.cs" />
