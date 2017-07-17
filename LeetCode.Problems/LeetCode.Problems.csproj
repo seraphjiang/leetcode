@@ -43,10 +43,16 @@
     <Compile Include="ArrayProblems\FindFirstMissingPositive.cs" />
     <Compile Include="ArrayProblems\FindMinimuminRotatedSortedArrayII.cs" />
     <Compile Include="ArrayProblems\InsertInterval.cs" />
+    <Compile Include="ArrayProblems\LonelyPixelI.cs" />
+    <Compile Include="ArrayProblems\RangeAddition.cs" />
     <Compile Include="ArrayProblems\WiggleSortProblem.cs" />
     <Compile Include="ArrayProblems\MaximumGapProblem.cs" />
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
     <Compile Include="BacktrackingProblems\ExpressionAddOperators.cs" />
+    <Compile Include="Contests\Week41\MaximumAverageSubarrayI.cs" />
+    <Compile Include="Contests\Week41\ExclusiveTimeofFunctions.cs" />
+    <Compile Include="Contests\Week41\LeetCodeProblem3.cs" />
+    <Compile Include="Contests\Week41\LeetCodeProblem4.cs" />
     <Compile Include="StringProblems\FlipGame.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
     <Compile Include="BacktrackingProblems\WordLadderII.cs" />
@@ -118,7 +124,7 @@
     <Compile Include="StackProblems\LargestRectangleinHistogram.cs" />
     <Compile Include="StringProblems\BasicCalculator.cs" />
     <Compile Include="StringProblems\BasicCalculatorII.cs" />
-    <Compile Include="StringProblems\FlipGameII.cs" />
+    <Compile Include="BacktrackingProblems\FlipGameII.cs" />
     <Compile Include="StringProblems\InterleavingString.cs" />
     <Compile Include="StringProblems\LongestValidParenthesesProblem.cs" />
     <Compile Include="StringProblems\ScrmbleString.cs" />
@@ -139,7 +145,6 @@
       <Name>LeetCode.DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
