@@ -45,6 +45,9 @@
     <Compile Include="ArrayProblems\InsertInterval.cs" />
     <Compile Include="ArrayProblems\LonelyPixelI.cs" />
     <Compile Include="ArrayProblems\RangeAddition.cs" />
+    <Compile Include="ArrayProblems\ShortestWordDistanceIII.cs" />
+    <Compile Include="ArrayProblems\ShortestWordDistanceII.cs" />
+    <Compile Include="ArrayProblems\ShortestWordDistance.cs" />
     <Compile Include="ArrayProblems\WiggleSortProblem.cs" />
     <Compile Include="ArrayProblems\MaximumGapProblem.cs" />
     <Compile Include="ArrayProblems\MedianofTwoSortedArrays.cs" />
@@ -53,6 +56,10 @@
     <Compile Include="Contests\Week41\ExclusiveTimeofFunctions.cs" />
     <Compile Include="Contests\Week41\MaximumAverageSubarrayII.cs" />
     <Compile Include="Contests\Week41\DesignSearchAutocompleteSystem.cs" />
+    <Compile Include="Contests\Week42\LeetCodeProblem1.cs" />
+    <Compile Include="Contests\Week42\LeetCodeProblem2.cs" />
+    <Compile Include="Contests\Week42\LeetCodeProblem3.cs" />
+    <Compile Include="Contests\Week42\LeetCodeProblem4.cs" />
     <Compile Include="DynamicProgrammingProblems\PaintHouse.cs" />
     <Compile Include="StringProblems\FlipGame.cs" />
     <Compile Include="BacktrackingProblems\NQueens.cs" />
@@ -146,6 +153,7 @@
       <Name>LeetCode.DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
