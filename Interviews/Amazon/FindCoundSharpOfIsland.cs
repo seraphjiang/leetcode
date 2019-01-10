@@ -34,6 +34,7 @@ Distinct islands in the example above are: 1, 1 at the top left corner; 1, 1 at 
 
 */
 
+// https://leetcode.com/problems/number-of-distinct-islands/solution/
 //
     public class FindCoundSharpOfIsland
     {
